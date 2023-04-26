@@ -5,12 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link rel="stylesheet" href="dossier/css/trois.css" />
   </head>
   <body>
-    <main>
+    <header>
+      <nav class="navbar">
+          <a href="pageAcu.html" class="logo">Mohammed</a>
+          <div class="nav-link">
+              <ul>
+                  <li class="active"><a href="dexièmeu.html">À propos de moi</a></li>
+                  <!-- <li><a href="trois.html">Cv</a></li> -->
+                  <li><a href="">Télécharger Cv</a></li>
+              </ul>
+                <!-- <a href=""></a> -->
+          </div>
+          <!-- <i class="fa-sharp fa-solid fa-bars menu-burger  "></i> -->
+<img src="dossier/img/Menu_icon_2_icon-icons.com_71856.png" alt="" class="menu-burger">
+
+      </nav>
+  </header>
+
+
+
+
+   <main>
       <section class="formation">
-        <article><h3>DIPLÔMES ET FORMATION</h3></article>
+        <article><h3>DIPLÔMES ET FORMATION</h3>
+        <figure><img src="dossier/img/formation.png" alt=""></figure></article>
         <article>
                     <h4>Développeur-euse web et web mobile</h4>
                    <p>Simplon, Aulnay-sous-Bois</p> <span>(mars2023-oct2023)</span>
@@ -45,10 +67,23 @@
                     <h4>Bac+4 en physique</h4>
                     <p>Université des sciences et technologies du Soudan</p> <span>(2012-2016)</span>
         </article>
-      </section><hr>
+      <!-- </section>  <div class="scrolldown" style="--color: skyblue">
+        <div class="chevrons">
+            <div class="chevrondown"></div>
+            <div class="chevrondown"></div>
+        </div>
+      </div> -->
+
+<a href="#pas">
+      <button>
+        ↓
+      </button>
+    </a>
+    <hr>
 
       <section class="professionnel">
-        <article><h3>EXPÉRIENCE PROFESSIONNELLES</h3></article>
+        <article><h3>EXPÉRIENCE PROFESSIONNELLES</h3>
+        <figure><img src="dossier/img/Developer activity-bro.png" alt=""></figure></article>
         <article>
                      <h4>Cariste C3 et préparateur des commandes</h4>
                      <p>FM logistic Gennevilliers 92230 </p>
@@ -63,17 +98,28 @@
 
                     </article>
       </section><hr>
-      <section class="loisir">
+      <section class="loisir" id="pas">
         <article>
             <h3>INTÉRÊTS ET LOISIRS</h3>
+            <figure><img src="dossier/img/Fitness tracker-rafiki.png" alt=""></figure>
         </article>
         <article><h4>Sport</h4>
             <p>Cardio, Fitness, Jouer au football</p>
+            
         </article>
       </section><hr>
       <section class="contact"></section>
     </main>
+    <script>    const menuHamburger = document.querySelector(".menu-burger")
+      const navLinks = document.querySelector(".nav-link")
+  
+      menuHamburger.addEventListener('click',()=>{
+      navLinks.classList.toggle('mobile-menu')
+      })</script>
 
-    
+
+
+
   </body>
+
 </html>
