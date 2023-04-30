@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cv Mohammed</title>
     <link rel="stylesheet" href="dossier/css/pageAcu.css">
-    <script src=""></script>
+    <!-- scrollreveal effect -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- scrollreveal effect -->
+  
 </head>
 <body>
    <main class="nor">
@@ -32,17 +35,17 @@
     </header>
 </div>  
 
-<article><p id="nom">
+<article ><p id="nom" class="scroll1">
     Salut <span>c'est</span> <br />
     Mohammed <br />
     ABBAKAR
   </p>
-  <p id="jop">Dévloppeur web et web mobile</p></article>
+  <p id="jop" class="tor">Dévloppeur web et web mobile</p></article>
   <div class="social">
     <ul class="icon-social"><li>
-        <li><a href="https://www.linkedin.com/in/mohammed-abbakar-ahmed-0b7905202/" target="_blank"><i class="fa-brands fa-linkedin fa-3x "></i></a></li>
-        <li><a href="https://github.com/MohammedABBAKAR" target="_blank"><i class="fa-brands fa-square-github fa-3x "></i></a></li>
-        <li><a href=""><i class="fa-brands fa-square-twitter fa-3x "></i></a></li>
+        <li class="scroll2"><a href="https://www.linkedin.com/in/mohammed-abbakar-ahmed-0b7905202/" target="_blank"><i class="fa-brands fa-linkedin fa-3x "></i></a></li>
+        <li class="scroll3"><a href="https://github.com/MohammedABBAKAR" target="_blank"><i class="fa-brands fa-square-github fa-3x "></i></a></li>
+        <li class="scroll4"><a href=""><i class="fa-brands fa-square-twitter fa-3x "></i></a></li>
        <!-- <li> <i class="fa-solid fa-envelope fa-2x"></i></li> -->
         <!-- <li><a href=""><i class="fa-brands fa-square-whatsapp fa-3x "></i></a></li> -->
         <!-- <li><a href=""><i class="fa-brands fa-linkedin fa-3x "></i></a></li> -->
@@ -56,9 +59,46 @@
 
     menuHamburger.addEventListener('click',()=>{
     navLinks.classList.toggle('mobile-menu')
-    })</script>
+    }) 
+
+    ScrollReveal({
+    reset: true,
+    distance: '100px',
+    duration:  2500,
+    delay: 400
+   
+   });
+   ScrollReveal().reveal('.scroll1, .scroll2', { delay: 500,  origin:'left'});
+   ScrollReveal().reveal('.tor, .scroll3', { delay: 700,  origin:'right'});
+   ScrollReveal().reveal('.scroll4', { delay: 500,  origin:'bottom'});
+   
+
+   
+    </script>
     <!-- icon -->
     <script src="https://kit.fontawesome.com/a12bab98e9.js" crossorigin="anonymous"></script>
     <!-- icon -->
+
+
 </body>
 </html>
+
+
+
+
+
+<!-- ScrollReveal({
+    reset: true,
+    distance: '100px',
+    duration:  2500,
+    delay: 400
+   
+   });
+   ScrollReveal().reveal('.moh, .moh2, .moh3 ', { delay: 500,  origin:'left'});
+   ScrollReveal().reveal('.scroll1', { delay: 700,  origin:'right'});
+   
+     </script> -->
+
+
+
+     <!-- <script src="https://unpkg.com/scrollreveal"></script> -->

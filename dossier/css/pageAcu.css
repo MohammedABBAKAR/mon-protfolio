@@ -14,7 +14,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    color: aliceblue;
+    color: var(--lightColor)
      /* box-shadow: 0 0 0 3px red;  */
   }
   body{
@@ -46,7 +46,7 @@ color: var(--primaryColor);
   .bac-dark{
     min-width: 85%;
     height: 80vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--bgColor-1);
     position: absolute;
   top: 50%;
   left: 50%;
@@ -56,19 +56,12 @@ color: var(--primaryColor);
 }
    /* header et nav bar */
 
-
-
-
    header .navbar{
     padding: 10px;
     /* margin: 20px; */
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    
-   
-   
-    
+    justify-content: space-between; 
 }
 .navbar .logo{
     font-size: 1.2em;
@@ -85,13 +78,13 @@ color: var(--primaryColor);
   
 }
 .navbar>div ul li.active a{
-    color: aqua;
+    color:var(--secondaryColor);
 }
 
 
 .menu-burger{
     display: none;
-   background: aliceblue;
+   background: var(--lightColor);
     position: absolute;
     top: 16px;
     right: 50px;
@@ -138,9 +131,6 @@ color: var(--primaryColor);
     top: 50%;
     left: 7.5%;
     transform: translate(-50%, -50%);
-
-
-  
  }
  .fa-brands{
     transition: 0.4s;
@@ -171,17 +161,17 @@ color: var(--primaryColor);
       background: rgba(36, 12, 12, 0.868);
       backdrop-filter: blur(10px);
       width: 100%;
-      height: 100vh;
+      height: 25vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-left: -150%;
+      margin-top: -150%;
       transition: all 0.5s ease;
-      z-index: 0;
+     
       
   }
   .nav-link.mobile-menu{
-      margin-left: 0;
+      margin-top: 0;
       
       }
   ul{
@@ -231,6 +221,15 @@ color: var(--primaryColor);
     color: var(--secondaryColor);
     padding-left: 60px;
   }
+  .social ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  position: absolute;
+  gap: 4px;
+  top: 200px;
+  left: 100px;
+ }
 }
 
 
